@@ -1,0 +1,7 @@
+use pyinstaller package
+
+this need to installed using pip
+
+in command mode execute this command
+
+pyinstaller --onefile -w <your python main script>

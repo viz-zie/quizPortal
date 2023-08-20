@@ -1,0 +1,28 @@
+CREATE TABLE `questions` (
+  `Qno` int NOT NULL,
+  `Qsndesigner` varchar(1000) NOT NULL,
+  `optionA` varchar(45) NOT NULL,
+  `optionB` varchar(45) NOT NULL,
+  `optionC` varchar(45) NOT NULL,
+  `optionD` varchar(45) NOT NULL,
+  `answerkey` varchar(45) NOT NULL,
+  PRIMARY KEY (`Qno`),
+  UNIQUE KEY `Qno_UNIQUE` (`Qno`)
+)
+
+
+
+# create table 
+  CREATE TABLE questions ( qno INT NOT NULL PRIMARY KEY , qsndescription VARCHAR(1000) NOT NUll );
+
+#alter table
+  alter table questions add optionA VARCHAR(100) NOT NULL;
+
+# insert statement
+  insert into questions(qno,qsndescription,optionA,optionB,optionC,optionD,answerkey,subject)values(1,"what is indias capital ? ","delhi","mumbai","chennai","banglore","delhi","gk");
+
+# update statement 
+  update questions set optionC="kolakata" where qno=1;
+
+# delete statement
+  delete from questions where qno=1;

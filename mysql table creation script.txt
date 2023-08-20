@@ -1,0 +1,24 @@
+CREATE TABLE `questions` (
+  `qno` int NOT NULL,
+  `qsndescription` varchar(1000) NOT NULL,
+  `optionA` varchar(100) NOT NULL,
+  `optionB` varchar(100) NOT NULL,
+  `optionC` varchar(100) NOT NULL,
+  `optionD` varchar(100) NOT NULL,
+  `answerkey` varchar(100) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  PRIMARY KEY (`qno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `student` (
+  `rollno` int NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `mark1` int NOT NULL,
+  `mark2` int NOT NULL,
+  `mark3` int DEFAULT NULL,
+  `fees` varchar(20) DEFAULT NULL,
+  `dummy` float DEFAULT NULL,
+  PRIMARY KEY (`rollno`),
+  UNIQUE KEY `rollno_UNIQUE` (`rollno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
